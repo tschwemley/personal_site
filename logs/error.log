@@ -1,1 +1,0 @@
-[Sun Nov 02 00:06:01.852875 2014] [core:error] [pid 4081] (13)Permission denied: [client 127.0.0.1:52072] AH00132: file permissions deny server access: /var/www/tylerschwemley.com/public/images/me.jpg, referer: http://dev-tylerschwemley.com/
