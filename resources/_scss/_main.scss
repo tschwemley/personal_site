@@ -72,28 +72,6 @@ h1 {
     word-wrap: break-word;
 }
 
-.button-wrapper {
-    margin-top: 8%;
-    text-align: center;
-
-    button {
-        background: transparent;
-        border: solid 7px $light-sea-green;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 200;
-        width: 310px;
-    }
-
-    button:hover {
-        border-color: #e67e22; // This one
-        color: #e67e22; // This one
-        // border-color: #9b59b6;
-        // border-color: #f1c40f;
-        // border-color: #e74c3c; // Or this one
-    }
-}
-
 .box-wrapper {
     width: 311px;
     position: relative;
@@ -103,26 +81,24 @@ h1 {
 }
 
 .box {
-	// box-shadow: inset 0 0 0 3px #2c3e50;
-	box-shadow: inset 0 0 0 6px #2c3e50;
+	box-shadow: inset 0 0 0 8px #2c3e50;
 	cursor: pointer;
 	display: inline-block;
     height: 65px;
 	margin: 0 10px;
 	position: relative;
 	text-align: center;
-	transition: background 0.4s 0.5s;
     width: 310px;
-	-webkit-transition: background 0.4s 0.5s;
 
     &:hover {
-        background: rgba(255,255,255,0);
         -webkit-transition-delay: 0s;
         transition-delay: 0s;
         
         >svg {
             >line {
-                stroke: red;
+                // stroke: red;
+                stroke: $light-sea-green;
+                stroke: $deep-lilac;
                 -webkit-transition-delay: 0.1s;
                 transition-delay: 0.1s;
  
@@ -150,6 +126,9 @@ h1 {
 
         >h3 {
             // PUt color change here
+            color: $mikado-yellow;
+            color: $light-sea-green;
+            // transition: color 1s ease;
         }
     }
 
@@ -159,6 +138,7 @@ h1 {
         font-size: 24px;
         font-weight: 200;
         line-height: 65px;
+        transition: color 1.2s ease-in-out;
     }
     
     >svg {
@@ -167,10 +147,11 @@ h1 {
         left: 0;
 
         >line {
-        	stroke-width: 8;
+        	stroke-width: 12;
+        	stroke: $light-sea-green;
         	// stroke: #1abc9c
             // stroke: #e67e22; // This one
-            stroke: #9b59b6;
+            // stroke: #9b59b6;
             // stroke: #f1c40f;
             // stroke: #e74c3c; // Or this one
             fill: none;
@@ -199,11 +180,31 @@ h1 {
     
     li {
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 40px;
 
         .fa:hover {
             cursor: pointer; 
-            color: red;
+            // color: $mikado-yellow;
+
+            &.light-sea-green {
+                color: $light-sea-green; 
+            }
+
+            &.zest {
+                color: $zest; 
+            }
+
+            &.deep-lilac {
+                color: $deep-lilac; 
+            }
+
+            &.mikado-yellow {
+                color: $mikado-yellow; 
+            }
+
+            &.carmine-pink {
+                color: $carmine-pink; 
+            }
         }
     }
 }
