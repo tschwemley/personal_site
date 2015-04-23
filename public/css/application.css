@@ -236,6 +236,29 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+.top-banner-wrapper {
+  width: 100%;
+  height: 20px; }
+
+.block {
+  content: ' ';
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  width: 20%; }
+  .block.light-sea-green {
+    background: #1abc9c; }
+  .block.zest {
+    background: #e5841b; }
+  .block.deep-lilac {
+    background: #9955bb; }
+  .block.mikado-yellow {
+    background: #f1c40f; }
+  .block.carmine-pink {
+    background: #eb4c42; }
+
 .container {
   max-width: 68em;
   margin-left: auto;

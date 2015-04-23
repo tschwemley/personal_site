@@ -1,3 +1,38 @@
+.top-banner-wrapper {
+    width: 100%;
+    height: 20px;
+}
+
+.block {
+    content: ' ';
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 20%;
+
+    &.light-sea-green {
+        background: $light-sea-green; 
+    }
+
+    &.zest {
+        background: $zest; 
+    }
+
+    &.deep-lilac {
+        background: $deep-lilac; 
+    }
+
+    &.mikado-yellow {
+        background: $mikado-yellow; 
+    }
+
+    &.carmine-pink {
+        background: $carmine-pink; 
+    }
+}
+
 .container {
     @include outer-container;
     overflow: hidden;
@@ -43,7 +78,7 @@ h1 {
 
     button {
         background: transparent;
-        border: solid 7px $mountain-meadow;
+        border: solid 7px $light-sea-green;
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         font-weight: 200;
@@ -133,6 +168,7 @@ h1 {
 
         >line {
         	stroke-width: 8;
+        	// stroke: #1abc9c
             // stroke: #e67e22; // This one
             stroke: #9b59b6;
             // stroke: #f1c40f;
