@@ -5,11 +5,13 @@
 
 <html>
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <style type="text/css">
         html {
             background: #073642;
             font-size: 18px;
             color: #93a1a1;
+            margin: 20px;
         }
 
         a {
@@ -20,8 +22,10 @@
             text-decoration: underline;
         }
 
-        pre {
+        pre, #text-wrapper {
             display: inline;
+            /* font-family: 'Inconsolata'; */
+            font-family: Monospace;
         }
 
         .comment {
@@ -52,6 +56,7 @@
 
         .typed-cursor{
             color: white;
+            color: #667b83;
             opacity: 1;
             display: inline-block;
             font-weight: 100;
@@ -94,7 +99,8 @@
 </head>
 
 <body>
-<pre id="text-wrapper"></pre>
+<!-- <pre id="text&#45;wrapper"></pre> -->
+<div id="text-wrapper"></div>
 <div id="controls" style="display:none">
 <br/>
 <a id="skip" href="javascript:void(0)" style="color: white">Skip Animation</a>
