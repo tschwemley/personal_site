@@ -179,7 +179,10 @@
                             tag += curString.substr(curStrPos).charAt(0);
                             curStrPos++;
                         }
-                        curStrPos++;
+
+                        if (curString.charAt(curStrPos+1) != '<') {
+                            curStrPos++;
+                        }
                         tag += endTag;
                     }
                 }
