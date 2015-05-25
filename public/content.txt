@@ -16,7 +16,7 @@
  */</span>
 <span class="keyword">var</span> externalResources = <span class="symbol-red">{</span>
     "<span class="key">github</span>"       :<span class="value"> <a class="value" href="https://github.com/tschwemley">/tschwemley</a></span>,
-    "<span class="key">instagram</span>"    :<span class="value"> <a class="value" href="https://instagram.com/schwemschwam">/schwemschwam</a></span>.
+    "<span class="key">instagram</span>"    :<span class="value"> <a class="value" href="https://instagram.com/schwemschwam">/schwemschwam</a></span>,
     "<span class="key">linkedin</span>"     :<span class="value"> <a class="value" href="">/tyler-schwemley</a></span>,
     "<span class="key">stackoverflow</span>":<span class="value"> <a class="value" href="">/tyler-schwemley</a></span>
 <span class="symbol-red">}</span>
