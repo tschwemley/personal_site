@@ -2,7 +2,7 @@ $(document).ready(function() {
     var textWrapper = $('#text-wrapper'), 
         pause = $('#pause'),
         skip = $('#skip'),
-        restart = $('#restart'),
+        pausePlayButton = $('#pause-play-button'),
         isPaused = false;
 
     jQuery.get('/content.txt', function(data) {
@@ -15,11 +15,15 @@ $(document).ready(function() {
 
     pause.on('click', function() {
         if (!isPaused) {
-            pause.text('Play');
+            pausePlayButton.toggleClass('fa-pause');
+            pausePlayButton.toggleClass('fa-play');
+            pausePlayButton.prop('title', 'Resume animation.');
             textWrapper.data('typed').pauseTyping();
             isPaused = true;
         } else {
-            pause.text('Pause');
+            pausePlayButton.toggleClass('fa-play');
+            pausePlayButton.toggleClass('fa-pause');
+            pausePlayButton.prop('title', 'Pause animation.');
             textWrapper.data('typed').continueTyping();
             isPaused = false;
         }

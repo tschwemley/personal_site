@@ -423,7 +423,7 @@
         preStringTyped: function() {},
         //callback for every typed string
         onStringTyped: function() {
-            $('#controls').show(); 
+            // $('#controls').show(); 
         },
         // callback for reset
         resetCallback: function() {}
