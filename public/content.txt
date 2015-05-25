@@ -1,0 +1,44 @@
+<pre id="about-me" style="display: inline;">
+<span class="comment">/**
+ *  Get to know more about me.
+ */</span>
+<span class="keyword">var</span> aboutMe = <span class="symbol-red">{</span>
+    "<span class="key">name</span>"      : "<span class="value">Tyler Schwemley</span>",
+    "<span class="key">location</span>"  : "<span class="value">Ann Arbor, MI</span>",
+    "<span class="key">occupation</span>": "<span class="value">Full stack and Android developer</span>",
+    "<span class="key">interests</span>" : "<span class="value">Web and mobile development, craft beer, video games.</span>"
+<span class="symbol-red">}</span>
+
+</pre>
+<pre id = "profiles" style="display:inline;">
+<span class="comment">/**
+ * View my profile at some of these sites:
+ */</span>
+<span class="keyword">var</span> externalResources = <span class="symbol-red">{</span>
+    "<span class="key">github</span>"       :<span class="value"> <a class="value" href="https://github.com/tschwemley">/tschwemley</a></span>,
+    "<span class="key">instagram</span>"    :<span class="value"> <a class="value" href="https://instagram.com/schwemschwam">/schwemschwam</a></span>.
+    "<span class="key">linkedin</span>"     :<span class="value"> <a class="value" href="">/tyler-schwemley</a></span>,
+    "<span class="key">stackoverflow</span>":<span class="value"> <a class="value" href="">/tyler-schwemley</a></span>
+<span class="symbol-red">}</span>
+
+</pre>
+<pre id = "selected-work" style="display:inline;">
+<span class="comment">/**
+ * Enjoy some of the sites I have built and/or contributed to.
+ */</span>
+<span class="keyword">var</span> mySites = <span class="symbol-red">{</span>
+    "<span class="key">orderv</span>"       :<span class="value"> <a class="value" href="https://orderv.com">https://orderv.com</a></span>,
+    "<span class="key">miniuri</span>"      :<span class="value"> <a class="value" href="http://miniuri.me">http://miniuri.me</a></span>,
+    "<span class="key">michael_shain</span>":<span class="value"> <a class="value" href="http://michaelshain.me">http://michaelshain.me</a></span>
+<span class="symbol-red">}</span>
+
+</pre>
+<pre id = "contact" style="display:inline;">
+<span class="comment">/**
+ * Feel free to contact me.
+ */</span>
+<span class="keyword">var</span> contactMe = <span class="symbol-red">{</span>
+    "<span class="key">email</span>"  : <span class="value"> <a class="value" href="mailto:tjschwem@gmail.com">tjschwem@gmail.com</a></span>,
+    "<span class="key">twitter</span>": <span class="value"> <a class="value" href="https://twitter.com/schwemschwam">@schwemschwam</a></span>
+<span class="symbol-red">}</span>
+</pre>
