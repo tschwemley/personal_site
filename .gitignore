@@ -1,3 +1,4 @@
-.sass-cache/
 *.swp
 *.swo
+.sass-cache/
+node_modules/
