@@ -1,4 +1,4 @@
-<pre id="about-me" style="display: inline;">
+<pre id="about-me">
 <span class="comment">/**
  *  Get to know more about me.
  */</span>
@@ -10,19 +10,19 @@
 <span class="symbol-red">}</span>;
 
 </pre>
-<pre id = "profiles" style="display:inline;">
+<pre id="profiles">
 <span class="comment">/**
  * View my profile at some of these sites:
  */</span>
 <span class="keyword">var</span> externalResources = <span class="symbol-red">{</span>
     "<span class="key">github</span>"       :<span class="value"> <a class="value" href="https://github.com/tschwemley">/tschwemley</a></span>,
     "<span class="key">instagram</span>"    :<span class="value"> <a class="value" href="https://instagram.com/schwemschwam">/schwemschwam</a></span>,
-    "<span class="key">linkedin</span>"     :<span class="value"> <a class="value" href="">/tyler-schwemley</a></span>,
-    "<span class="key">stackoverflow</span>":<span class="value"> <a class="value" href="">/tyler-schwemley</a></span>
+    "<span class="key">linkedin</span>"     :<span class="value"> <a class="value" href="https://www.linkedin.com/pub/tyler-schwemley/85/308/b02">/tyler-schwemley</a></span>,
+    "<span class="key">stackoverflow</span>":<span class="value"> <a class="value" href="http://stackoverflow.com/users/3987813/tyler-schwemley">/tyler-schwemley</a></span>
 <span class="symbol-red">}</span>;
 
 </pre>
-<pre id = "selected-work" style="display:inline;">
+<pre id="selected-work">
 <span class="comment">/**
  * Enjoy some of the sites I have built and/or contributed to.
  */</span>
@@ -33,7 +33,7 @@
 <span class="symbol-red">}</span>;
 
 </pre>
-<pre id = "contact" style="display:inline;">
+<pre id="contact">
 <span class="comment">/**
  * Feel free to contact me.
  */</span>
