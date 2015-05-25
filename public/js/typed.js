@@ -82,6 +82,9 @@
         // for stopping
         this.stop = false;
 
+        // for pausing
+        this.backspacing = false;
+
         // custom cursor
         this.cursorChar = this.options.cursorChar;
 
@@ -110,7 +113,11 @@
                 if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
 
                 // Start typing
-                self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
+                if (self.backspacing) {
+                    self.backspace(self.strings[self.sequence[self.arrayPos]], self.strPos);
+                } else {
+                    self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
+                }
             }, self.startDelay);
         }
 
@@ -129,6 +136,8 @@
         typewrite: function(curString, curStrPos) {
             // exit when stopped
             if (this.stop === true) {
+                // Set strPos to current position (for pausing)
+                this.strPos = curStrPos;
                 return;
             }
 
@@ -136,6 +145,10 @@
             // can't be global since number changes each time loop is executed
             var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
             var self = this;
+
+            // Needed for pausing
+            self.strPos = curStrPos;
+            self.backspacing = false;
 
             // ------------- optional ------------- //
             // backpaces a certain string faster
@@ -244,8 +257,11 @@
 
         ,
         backspace: function(curString, curStrPos) {
+            this.backspacing = true;
             // exit when stopped
             if (this.stop === true) {
+                // Set strPos to current position (for pausing)
+                this.strPos = curStrPos;
                 return;
             }
 
@@ -317,8 +333,9 @@
                         if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
 
                         self.init();
-                    } else
+                    } else {
                         self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
+                    }
                 }
 
                 // humanized value for typing
@@ -341,23 +358,33 @@
             return array;
         }
 
-        // Start & Stop currently not working
+        ,
+        pauseTyping: function() {
+            var self = this;
+            this.stop = true;
+        }
+        ,
 
-        // , stop: function() {
-        //     var self = this;
+        continueTyping: function() {
+            var self = this;
+            if (self.stop == false) {
+                return;
+            }
 
-        //     self.stop = true;
-        //     clearInterval(self.timeout);
-        // }
+            // Get the string where it was left of on pause.
+            var curString = self.strings[self.sequence[self.arrayPos]];
 
-        // , start: function() {
-        //     var self = this;
-        //     if(self.stop === false)
-        //        return;
+            self.stop = false;
 
-        //     this.stop = false;
-        //     this.init();
-        // }
+            // Continue where the string left off.
+            if (self.backspacing) {
+                // Strip any pause characters if backspacing
+                curString = curString.replace(/\^[\d]*/g, "");
+                self.backspace(curString, self.strPos);
+            } else {
+                self.typewrite(curString, self.strPos); 
+            }
+        }
 
         // Reset and rebuild the element
         ,
@@ -413,12 +440,13 @@
         // call when done callback function
         callback: function() {},
         // starting callback function before each string
+        showControls: false,
         preStringTyped: function() {},
         //callback for every typed string
-        onStringTyped: function() {},
+        onStringTyped: function() {
+            $('#controls').show(); 
+        },
         // callback for reset
         resetCallback: function() {}
     };
-
-
 }(window.jQuery);
