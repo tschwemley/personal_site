@@ -1,0 +1,97 @@
+html {
+    background: #073642;
+    font-size: 18px;
+    color: #93a1a1;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre, #text-wrapper {
+    display: inline;
+    font-family: Monospace;
+}
+
+.comment {
+    display: inline;
+    color: #93a1a1;
+    color: #586e75;
+}
+
+.symbol-red {
+    color: #dc322f;
+}
+
+.symbol-gray {
+    color: #93a1a1;
+}
+
+.keyword {
+    color: #268bd2;
+}
+
+.key {
+    color: #b58900;
+}
+
+.value {
+    color: #2aa198;
+}
+
+.typed-cursor{
+    color: white;
+    color: #667b83;
+    opacity: 1;
+    display: inline-block;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#controls {
+    bottom: 0;
+    margin-bottom: 40px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+#controls i {
+    font-size: 24px;
+    margin-right: 10px;
+}
