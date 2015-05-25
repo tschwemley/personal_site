@@ -95,9 +95,11 @@
 
 <body>
 <pre id="text-wrapper"></pre>
+<div id="controls" style="display:none">
 <br/>
-<a id="skip" href="javascript:void" style="color: white">Skip Animation</a>
+<a id="skip" href="javascript:void(0)" style="color: white">Skip Animation</a>
 <br/>
-<a id="pause" href="javascript:void" style="color:white">Pause</a>
+<a id="pause" href="javascript:void(0)" style="color:white">Pause</a>
+</div>
 </body>
 </html>
