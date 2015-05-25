@@ -85,6 +85,7 @@ pre, #text-wrapper {
 
 #controls {
     bottom: 0;
+    display: none;
     margin-bottom: 40px;
     position: fixed;
     text-align: center;

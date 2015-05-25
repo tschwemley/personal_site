@@ -33,7 +33,6 @@ $(document).ready(function() {
         textWrapper.data('typed').pauseTyping();
 
         jQuery.get('/content.txt', function(data) {
-            textWrapper.html(''); 
             textWrapper.html(data);
         });
     });
