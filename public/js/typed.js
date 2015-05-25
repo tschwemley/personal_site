@@ -358,7 +358,9 @@
             // Continue where the string left off.
             if (self.backspacing) {
                 // Strip any pause characters if backspacing
+                console.log('before: ' + curString);
                 curString = curString.replace(/\^[\d]*/g, "");
+                console.log('after: ' + curString);
                 self.backspace(curString, self.strPos);
             } else {
                 self.typewrite(curString, self.strPos); 
