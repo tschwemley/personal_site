@@ -1,16 +1,29 @@
 $(document).ready(function() {
+    $('#controls').show();
     var textWrapper = $('#text-wrapper'), 
         pause = $('#pause'),
         skip = $('#skip'),
         pausePlayButton = $('#pause-play-button'),
         isPaused = false;
 
-    jQuery.get('/content.txt', function(data) {
-        textWrapper.typed({
-            strings: ["Hello :)^500 My name is Tyler^500; thanks for visiting!^500", data],
-            typeSpeed: 0,
-            contentType: 'html'
-        });
+    var profileContents = {
+        data: null,
+        init: function() {
+            $.ajax({
+                url: '/content.txt',
+                async: true,
+                success: function(data) {
+                    profileContents.data = data; 
+                }
+            });
+        }
+    };
+
+    profileContents.init();
+    textWrapper.typed({
+        strings: ["Hello :)^500 My name is Tyler^500; thanks for visiting!^500", profileContents.data],
+        typeSpeed: 0,
+        contentType: 'html'
     });
 
     pause.on('click', function() {
@@ -30,10 +43,8 @@ $(document).ready(function() {
     });
 
     skip.on('click', function() {
-        textWrapper.data('typed').pauseTyping();
-
-        jQuery.get('/content.txt', function(data) {
-            textWrapper.html(data);
-        });
+        textWrapper.data('typed').reset();
+        // skip.hide();
+        document.getElementById('text-wrapper').innerHTML = profileContents.data;
     });
 });
