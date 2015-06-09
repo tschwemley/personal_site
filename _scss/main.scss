@@ -1,0 +1,88 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "colors";
+@import "font-awesome/font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+html {
+    background: $tiber;
+    color: $pewter;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.wrapper {
+    @include outer-container;
+    margin-top: 3%;
+}
+
+a {
+    color: $pewter;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline; 
+    }
+}
+
+pre, #text-wrapper {
+    display: inline;
+    font-family: Monospace;
+    font-family: 'Source Code Pro';
+}
+
+.comment {
+    display: inline;
+    color: $cutty-sark;
+}
+
+.symbol-red {
+    color: $punch;
+}
+
+.symbol-gray {
+    color: $pewter;
+}
+
+.keyword {
+    color: $curious-blue;
+}
+
+.key {
+    color: $pirate-gold;
+}
+
+.value {
+    color: $jungle-green;
+}
+
+.typed-cursor{
+    color: $pale-sky;
+    opacity: 1;
+    display: inline-block;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@include keyframes(blink) {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#controls {
+    bottom: 0;
+    margin-bottom: 2%;
+    position: fixed;
+    text-align: center;
+    letter-spacing: 10px;
+    width: 100%;
+}
+
+#controls i {
+    font-size: 22px;
+}

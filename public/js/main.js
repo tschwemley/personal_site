@@ -2,16 +2,26 @@ $(document).ready(function() {
     var textWrapper = $('#text-wrapper'), 
         pause = $('#pause'),
         skip = $('#skip'),
+        restart = $('#restart'),
         pausePlayButton = $('#pause-play-button'),
-        isPaused = false;
+        isPaused = false,
+        helloStr = "Hello :)^500 My name is Tyler^500; thanks for visiting!^500";
 
-    jQuery.get('/content.txt', function(data) {
-        textWrapper.typed({
-            strings: ["Hello :)^500 My name is Tyler^500; thanks for visiting!^500", data],
-            typeSpeed: 0,
-            contentType: 'html'
-        });
-    });
+    var profileContents = {
+        data: null,
+        init: function() {
+            $.ajax({
+                url: '/content.txt',
+                async: false,
+                success: function(data) {
+                    profileContents.data = data; 
+                }
+            });
+        }
+    };
+
+    profileContents.init();
+    startTyping();
 
     pause.on('click', function() {
         if (!isPaused) {
@@ -30,10 +40,21 @@ $(document).ready(function() {
     });
 
     skip.on('click', function() {
-        textWrapper.data('typed').pauseTyping();
-
-        jQuery.get('/content.txt', function(data) {
-            textWrapper.html(data);
-        });
+        textWrapper.data('typed').reset();
+        skip.hide();
+        document.getElementById('text-wrapper').innerHTML = profileContents.data;
     });
+
+    restart.on('click', function() {
+        location.reload(); 
+    });
+
+    function startTyping() {
+        textWrapper.typed({
+            strings: [helloStr, profileContents.data],
+            typeSpeed: 0,
+            backspaceSpeed: 0,
+            contentType: 'html'
+        });
+    }
 });
