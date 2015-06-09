@@ -424,9 +424,7 @@
         showControls: false,
         preStringTyped: function() {},
         //callback for every typed string
-        onStringTyped: function() {
-            // $('#controls').show(); 
-        },
+        onStringTyped: function() {},
         // callback for reset
         resetCallback: function() {}
     };

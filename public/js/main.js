@@ -1,17 +1,18 @@
 $(document).ready(function() {
-    $('#controls').show();
     var textWrapper = $('#text-wrapper'), 
         pause = $('#pause'),
         skip = $('#skip'),
+        restart = $('#restart'),
         pausePlayButton = $('#pause-play-button'),
-        isPaused = false;
+        isPaused = false,
+        helloStr = "Hello :)^500 My name is Tyler^500; thanks for visiting!^500";
 
     var profileContents = {
         data: null,
         init: function() {
             $.ajax({
                 url: '/content.txt',
-                async: true,
+                async: false,
                 success: function(data) {
                     profileContents.data = data; 
                 }
@@ -20,11 +21,7 @@ $(document).ready(function() {
     };
 
     profileContents.init();
-    textWrapper.typed({
-        strings: ["Hello :)^500 My name is Tyler^500; thanks for visiting!^500", profileContents.data],
-        typeSpeed: 0,
-        contentType: 'html'
-    });
+    startTyping();
 
     pause.on('click', function() {
         if (!isPaused) {
@@ -44,7 +41,20 @@ $(document).ready(function() {
 
     skip.on('click', function() {
         textWrapper.data('typed').reset();
-        // skip.hide();
+        skip.hide();
         document.getElementById('text-wrapper').innerHTML = profileContents.data;
     });
+
+    restart.on('click', function() {
+        location.reload(); 
+    });
+
+    function startTyping() {
+        textWrapper.typed({
+            strings: [helloStr, profileContents.data],
+            typeSpeed: 0,
+            backspaceSpeed: 0,
+            contentType: 'html'
+        });
+    }
 });
