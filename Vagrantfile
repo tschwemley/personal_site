@@ -15,6 +15,11 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :shell, path: "vagrant/bootstrap.sh"
 
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine.
+  config.vm.network :forwarded_port, guest: 80, host: 4567
+  config.vm.network :forwarded_port, guest: 3306, host: 33306
+
   # Auto updates hosts file
   config.vm.hostname = 'personal-site'
   config.hostmanager.enabled = true
