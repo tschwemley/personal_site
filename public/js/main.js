@@ -42,6 +42,7 @@ $(document).ready(function() {
     skip.on('click', function() {
         textWrapper.data('typed').reset();
         skip.hide();
+        pausePlayButton.hide();
         document.getElementById('text-wrapper').innerHTML = profileContents.data;
     });
 
@@ -49,12 +50,21 @@ $(document).ready(function() {
         location.reload(); 
     });
 
+    var stringTyped = 0;
     function startTyping() {
         textWrapper.typed({
             strings: [helloStr, profileContents.data],
             typeSpeed: 0,
             backspaceSpeed: 0,
-            contentType: 'html'
+            contentType: 'html',
+            onStringTyped: function() {
+              if(stringTyped == 1) {
+                skip.hide(); 
+                pausePlayButton.hide();
+              } else {
+                stringTyped++;
+              }
+            }
         });
     }
 });
