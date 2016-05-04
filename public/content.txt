@@ -3,10 +3,10 @@
  *  Get to know more about me.
  */</span>
 <span class="keyword">var</span> aboutMe = <span class="symbol-red">{</span>
-    "<span class="key">name</span>"      : "<span class="value">Tyler Schwemley</span>",
-    "<span class="key">location</span>"  : "<span class="value">Ann Arbor, MI</span>",
-    "<span class="key">occupation</span>": "<span class="value">Full stack engineer and DevOps specialist.</span>",
-    "<span class="key">interests</span>" : <span class="symbol-red">[</span><span class="value">'Development'</span>, <span class="value">'Craft Beer'</span>, <span class="value">'Sports'</span>, <span class="value">'Video Games'</span>, <span class="value">'Dogs'</span><span class="symbol-red">]</span>
+  '<span class="key">name</span>'      : '<span class="value">Tyler Schwemley</span>',
+  '<span class="key">location</span>'  : '<span class="value">Ann Arbor, MI</span>',
+  '<span class="key">occupation</span>': '<span class="value">Full stack engineer and DevOps specialist.</span>',
+  '<span class="key">interests</span>' : <span class="symbol-red">[</span>'<span class="value">Development</span>', '<span class="value">Craft Beer</span>', '<span class="value">Sports</span>', '<span class="value">Video Games</span>', '<span class="value">Dogs</span>'<span class="symbol-red">]</span>
 <span class="symbol-red">}</span>;
 
 </pre>
@@ -15,11 +15,11 @@
  * View my profile at some of these sites:
  */</span>
 <span class="keyword">var</span> myResources = <span class="symbol-red">{</span>
-    "<span class="key">github</span>"       :<span class="value"> <a class="value" href="https://github.com/tschwemley">/tschwemley</a></span>,
-    "<span class="key">gist</span>"         :<span class="value"> <a class="value" href="https://gist.github.com/tschwemley">/tschwemley</a></span>,
-    "<span class="key">linkedin</span>"     :<span class="value"> <a class="value" href="https://www.linkedin.com/pub/tyler-schwemley/85/308/b02">/tyler-schwemley</a></span>,
-    "<span class="key">stackoverflow</span>":<span class="value"> <a class="value" href="http://stackoverflow.com/users/3987813/tyler-schwemley">/tyler-schwemley</a></span>,
-    "<span class="key">upwork</span>"       :<span class="value"> <a class="value" href="http://www.upwork.com/o/profiles/users/_~01f84548ed18d80fea/">Tyler Schwemley</a></span>
+  '<span class="key">github</span>'       : '<span class="value"><a class="value" href="https://github.com/tschwemley">/tschwemley</a></span>',
+  '<span class="key">gist</span>'         : '<span class="value"><a class="value" href="https://gist.github.com/tschwemley">/tschwemley</a></span>',
+  '<span class="key">linkedin</span>'     : '<span class="value"><a class="value" href="https://www.linkedin.com/pub/tyler-schwemley/85/308/b02">/tyler-schwemley</a></span>',
+  '<span class="key">stackoverflow</span>': '<span class="value"><a class="value" href="http://stackoverflow.com/users/3987813/tyler-schwemley">/tyler-schwemley</a></span>',
+  '<span class="key">upwork</span>'       : '<span class="value"><a class="value" href="http://www.upwork.com/o/profiles/users/_~01f84548ed18d80fea/">Tyler Schwemley</a></span>'
 <span class="symbol-red">}</span>;
 
 </pre>
@@ -28,9 +28,9 @@
  * Enjoy some of the sites and projects I have either built or contributed to.
  */</span>
 <span class="keyword">var</span> myWork = <span class="symbol-red">{</span>
-    "<span class="key">collage.com</span>"    :<span class="value"> <a class="value" href="https://collage.com">https://collage.com</a></span>,
-    "<span class="key">orderv</span>"         :<span class="value"> <a class="value" href="https://orderv.com">https://orderv.com</a></span>,
-    "<span class="key">miniuri</span>"        :<span class="value"> <a class="value" href="http://miniuri.me">http://miniuri.me</a></span>
+  '<span class="key">collage.com</span>': '<span class="value"><a class="value" href="https://collage.com">https://collage.com</a></span>',
+  '<span class="key">orderv</span>'     : '<span class="value"><a class="value" href="https://orderv.com">https://orderv.com</a></span>',
+  '<span class="key">miniuri</span>'    : '<span class="value"><a class="value" href="http://miniuri.me">http://miniuri.me</a></span>'
 <span class="symbol-red">}</span>;
 
 </pre>
@@ -39,6 +39,6 @@
  * Feel free to contact me.
  */</span>
 <span class="keyword">var</span> contactMe = <span class="symbol-red">{</span>
-    "<span class="key">email</span>"  : <span class="value"> <a class="value" href="mailto:tjschwem@gmail.com">tjschwem@gmail.com</a></span>
+  '<span class="key">email</span>': '<span class="value"><a class="value" href="mailto:tjschwem@gmail.com">tjschwem@gmail.com</a></span>'
 <span class="symbol-red">}</span>;
 </pre>
