@@ -16,6 +16,7 @@
  */</span>
 <span class="keyword">var</span> myResources = <span class="symbol-red">{</span>
     "<span class="key">github</span>"       :<span class="value"> <a class="value" href="https://github.com/tschwemley">/tschwemley</a></span>,
+    "<span class="key">gist</span>"         :<span class="value"> <a class="value" href="https://gist.github.com/tschwemley">/tschwemley</a></span>,
     "<span class="key">linkedin</span>"     :<span class="value"> <a class="value" href="https://www.linkedin.com/pub/tyler-schwemley/85/308/b02">/tyler-schwemley</a></span>,
     "<span class="key">stackoverflow</span>":<span class="value"> <a class="value" href="http://stackoverflow.com/users/3987813/tyler-schwemley">/tyler-schwemley</a></span>,
     "<span class="key">upwork</span>"       :<span class="value"> <a class="value" href="http://www.upwork.com/o/profiles/users/_~01f84548ed18d80fea/">Tyler Schwemley</a></span>

@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, guest: 3306, host: 33306
 
   # Auto updates hosts file
-  config.vm.hostname = 'personal-site'
+  config.vm.hostname = 'localhost.tylerschwemley.com'
   config.hostmanager.enabled = true
   config.hostmanager.manage_host = true
 
