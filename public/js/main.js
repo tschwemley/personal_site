@@ -25,14 +25,12 @@ $(document).ready(function() {
 
     pause.on('click', function() {
         if (!isPaused) {
-            pausePlayButton.toggleClass('fa-pause');
-            pausePlayButton.toggleClass('fa-play');
+            pausePlayButton.toggleClass('fa-pause fa-play');
             pausePlayButton.prop('title', 'Resume animation.');
             textWrapper.data('typed').pauseTyping();
             isPaused = true;
         } else {
-            pausePlayButton.toggleClass('fa-play');
-            pausePlayButton.toggleClass('fa-pause');
+            pausePlayButton.toggleClass('fa-pause fa-play');
             pausePlayButton.prop('title', 'Pause animation.');
             textWrapper.data('typed').continueTyping();
             isPaused = false;

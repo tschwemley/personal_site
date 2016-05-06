@@ -28,9 +28,10 @@
  * Enjoy some of the sites and projects I have either built or contributed to.
  */</span>
 <span class="keyword">var</span> myWork = <span class="symbol-red">{</span>
-  '<span class="key">collage.com</span>': '<span class="value"><a class="value" href="https://collage.com">https://collage.com</a></span>',
-  '<span class="key">orderv</span>'     : '<span class="value"><a class="value" href="https://orderv.com">https://orderv.com</a></span>',
-  '<span class="key">miniuri</span>'    : '<span class="value"><a class="value" href="http://miniuri.me">http://miniuri.me</a></span>'
+  '<span class="key">collage.com</span>'    : '<span class="value"><a class="value" href="https://collage.com">collage.com</a></span>',
+  '<span class="key">miniuri</span>'        : '<span class="value"><a class="value" href="http://miniuri.me">miniuri.me</a></span>'
+  '<span class="key">my proposal</span>'    : '<span class="value"><a class="value" href="http://proposal.tyler-allison.com">proposal.tyler-allison.com</a> (<a class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>'
+  '<span class="key">orderv</span>'         : '<span class="value"><a class="value" href="https://orderv.com">orderv.com</a></span>',
 <span class="symbol-red">}</span>;
 
 </pre>
