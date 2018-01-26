@@ -18,7 +18,6 @@
   '<span class="key">github</span>'       : '<span class="value"><a target="_blank" class="value" href="https://github.com/tschwemley">/tschwemley</a></span>',
   '<span class="key">gist</span>'         : '<span class="value"><a target="_blank" class="value" href="https://gist.github.com/tschwemley">/tschwemley</a></span>',
   '<span class="key">linkedin</span>'     : '<span class="value"><a target="_blank" class="value" href="https://www.linkedin.com/pub/tyler-schwemley/85/308/b02">/tyler-schwemley</a></span>',
-  '<span class="key">stackoverflow</span>': '<span class="value"><a target="_blank" class="value" href="http://stackoverflow.com/users/3987813/tyler-schwemley">/tyler-schwemley</a></span>',
   '<span class="key">upwork</span>'       : '<span class="value"><a target="_blank" class="value" href="http://www.upwork.com/o/profiles/users/_~01f84548ed18d80fea/">Tyler Schwemley</a></span>'
 <span class="symbol-red">}</span>;
 
@@ -30,9 +29,9 @@
 <span class="keyword">var</span> myWork = <span class="symbol-red">{</span>
   '<span class="key">collage.com</span>'    : '<span class="value"><a target="_blank" class="value" href="https://collage.com">collage.com</a></span>',
   '<span class="key">orderv</span>'         : '<span class="value"><a target="_blank" class="value" href="https://orderv.com">orderv.com</a></span>',
-  '<span class="key">perrywallace</span>'   : '<span class="value"><a target="_blank" class="value" href="http://perrywallacefilm.com">perrywallacefilm.com</a></span>',
-  '<span class="key">my proposal</span>'    : '<span class="value"><a target="_blank" class="value" href="http://proposal.tyler-allison.com">proposal.tyler-allison.com</a> (<a target="_blank" class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>'
-  '<span class="key">miniuri</span>'        : '<span class="value"><a target="_blank" class="value" href="http://miniuri.me">miniuri.me</a></span>'
+  '<span class="key">my proposal</span>'    : '<span class="value"><a target="_blank" class="value" href="http://proposal.tyler-allison.com">proposal.tyler-allison.com</a> (<a target="_blank" class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>',
+  '<span class="key">medhub</span>'         : '<span class="value"><a target="_blank" class="value" href="https://medhub.com">medhub.com</a></span>',
+  '<span class="key">breakout</span>'       : '<span class="value"><a target="_blank" class="value" href="games.tylerschwemley.com">breakout</a></span>'
 <span class="symbol-red">}</span>;
 
 </pre>
