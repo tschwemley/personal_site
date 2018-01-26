@@ -29,9 +29,9 @@
 <span class="keyword">var</span> myWork = <span class="symbol-red">{</span>
   '<span class="key">collage.com</span>'    : '<span class="value"><a target="_blank" class="value" href="https://collage.com">collage.com</a></span>',
   '<span class="key">orderv</span>'         : '<span class="value"><a target="_blank" class="value" href="https://orderv.com">orderv.com</a></span>',
-  '<span class="key">my proposal</span>'    : '<span class="value"><a target="_blank" class="value" href="http://proposal.tyler-allison.com">proposal.tyler-allison.com</a> (<a target="_blank" class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>',
-  '<span class="key">medhub</span>'         : '<span class="value"><a target="_blank" class="value" href="https://medhub.com">medhub.com</a></span>',
-  '<span class="key">breakout</span>'       : '<span class="value"><a target="_blank" class="value" href="games.tylerschwemley.com">breakout</a></span>'
+  '<span class="key">my proposal</span>'    : '<span class="value"><a target="_blank" class="value" href="http://whereinannarboristylerschwemley.com">whereinannarboristylerschwemley.com</a> (<a target="_blank" class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>',
+  '<span class="key">medhub</span>'         : '<span class="value"><a target="_blank" class="value" href="http://medhub.com">medhub.com</a></span>',
+  '<span class="key">breakout</span>'       : '<span class="value"><a target="_blank" class="value" href="//games.tylerschwemley.com">breakout</a></span>'
 <span class="symbol-red">}</span>;
 
 </pre>
