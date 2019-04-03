@@ -5,7 +5,7 @@
 <span class="keyword">var</span> aboutMe = <span class="symbol-red">{</span>
   '<span class="key">name</span>'      : '<span class="value">Tyler Schwemley</span>',
   '<span class="key">location</span>'  : '<span class="value">Ann Arbor, MI</span>',
-  '<span class="key">occupation</span>': '<span class="value">Full stack engineer and DevOps specialist.</span>',
+  '<span class="key">occupation</span>': '<span class="value">Full stack engineer.</span>',
   '<span class="key">interests</span>' : <span class="symbol-red">[</span>'<span class="value">Development</span>', '<span class="value">Craft Beer</span>', '<span class="value">Sports</span>', '<span class="value">Video Games</span>', '<span class="value">Dogs</span>'<span class="symbol-red">]</span>
 <span class="symbol-red">}</span>;
 
@@ -16,9 +16,9 @@
  */</span>
 <span class="keyword">var</span> myResources = <span class="symbol-red">{</span>
   '<span class="key">github</span>'       : '<span class="value"><a target="_blank" class="value" href="https://github.com/tschwemley">/tschwemley</a></span>',
+  '<span class="key">gitlab</span>'       : '<span class="value"><a target="_blank" class="value" href="https://gitlab.com/tschwemley">/tschwemley</a></span>',
   '<span class="key">gist</span>'         : '<span class="value"><a target="_blank" class="value" href="https://gist.github.com/tschwemley">/tschwemley</a></span>',
   '<span class="key">linkedin</span>'     : '<span class="value"><a target="_blank" class="value" href="https://www.linkedin.com/pub/tyler-schwemley/85/308/b02">/tyler-schwemley</a></span>',
-  '<span class="key">upwork</span>'       : '<span class="value"><a target="_blank" class="value" href="http://www.upwork.com/o/profiles/users/_~01f84548ed18d80fea/">Tyler Schwemley</a></span>'
 <span class="symbol-red">}</span>;
 
 </pre>
@@ -29,9 +29,9 @@
 <span class="keyword">var</span> myWork = <span class="symbol-red">{</span>
   '<span class="key">collage.com</span>'    : '<span class="value"><a target="_blank" class="value" href="https://collage.com">collage.com</a></span>',
   '<span class="key">orderv</span>'         : '<span class="value"><a target="_blank" class="value" href="https://orderv.com">orderv.com</a></span>',
-  '<span class="key">my proposal</span>'    : '<span class="value"><a target="_blank" class="value" href="http://whereinannarboristylerschwemley.com">whereinannarboristylerschwemley.com</a> (<a target="_blank" class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>',
+  '<span class="key">my proposal</span>'    : '<span class="value"><a target="_blank" class="value" href="http://whereinannarboris.tylerschwemley.com">whereinannarboristylerschwemley.com</a> (<a target="_blank" class="value" href="https://github.com/tschwemley/proposal-scavanger-hunt">answers here</a>)</span>',
   '<span class="key">medhub</span>'         : '<span class="value"><a target="_blank" class="value" href="http://medhub.com">medhub.com</a></span>',
-  '<span class="key">breakout</span>'       : '<span class="value"><a target="_blank" class="value" href="//games.tylerschwemley.com">breakout</a></span>'
+  '<span class="key">breakout</span>'       : '<span class="value"><a target="_blank" class="value" href="http://games.tylerschwemley.com">breakout</a></span>'
 <span class="symbol-red">}</span>;
 
 </pre>
